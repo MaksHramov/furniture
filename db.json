@@ -1,0 +1,90 @@
+
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Syltherine",
+        "text": "Stylish cafe chair",
+        "price": 3500,
+        "img": "/Products/image1.png"
+      },
+      {
+        "id": 2,
+        "title": "SLeviosa",
+        "text": "Stylish cafe chair",
+        "price": 2500,
+        "img": "/Products/image2.png"
+      },
+      {
+        "id": 3,
+        "title": "Lolito",
+        "text": "Luxury big sofa",
+        "price": 2500,
+        "img": "/Products/image3.png"
+      },
+      {
+        "id": 4,
+        "title": "Respira",
+        "text": "Outdoor bar table and stool",
+        "price": 2500,
+        "img": "/Products/image4.png"
+      },
+      {
+        "id": 5,
+        "title": "Syltherine",
+        "text": "Stylish cafe chair",
+        "price": 3500,
+        "img": "/Products/image1.png"
+      },
+      {
+        "id": 6,
+        "title": "SLeviosa",
+        "text": "Stylish cafe chair",
+        "price": 2500,
+        "img": "/Products/image2.png"
+      },
+      {
+        "id": 7,
+        "title": "Lolito",
+        "text": "Luxury big sofa",
+        "price": 2500,
+        "img": "/Products/image3.png"
+      },
+      {
+        "id": 8,
+        "title": "Respira",
+        "text": "Outdoor bar table and stool",
+        "price": 2500,
+        "img": "/Products/image4.png"
+      },
+      {
+        "id": 9,
+        "title": "Syltherine",
+        "text": "Stylish cafe chair",
+        "price": 3500,
+        "img": "/Products/image1.png"
+      },
+      {
+        "id": 10,
+        "title": "SLeviosa",
+        "text": "Stylish cafe chair",
+        "price": 2500,
+        "img": "/Products/image2.png"
+      },
+      {
+        "id": 11,
+        "title": "Lolito",
+        "text": "Luxury big sofa",
+        "price": 2500,
+        "img": "/Products/image3.png"
+      },
+      {
+        "id": 12,
+        "title": "Respira",
+        "text": "Outdoor bar table and stool",
+        "price": 2500,
+        "img": "/Products/image4.png"
+      }
+    ]
+  }
+  

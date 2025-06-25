@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header-logo{
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 18px;
+}
+
+li{
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+li:hover{
+    color: grey;
+}
+
+.header-section-user li{
+    transition: all 500ms ease;
+}
+
+.header-section-user li:hover{
+    transform: scale(1.2);
+}

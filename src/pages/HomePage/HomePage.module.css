@@ -1,0 +1,45 @@
+.banner{
+    width: 96%;
+    height: 730px;
+    background-image: url('../../images/HomePage/banner.png');
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 58px;
+}
+
+.banner-section{
+    background-color: #FFF3E3;
+    width: 580px;
+    height: 350px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.banner-title{
+    color: #B88E2F;
+    font-size: 52px;
+    line-height: 65px;
+    margin-bottom: 17px;
+}
+
+.banner-text{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.banner-button{
+    margin-top: 46px;
+    width: 222px;
+    height: 74px;
+    border: none;
+    background-color: #B88E2F;
+    color: #FFFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.banner-button:hover{
+    background-color: #896716;
+}

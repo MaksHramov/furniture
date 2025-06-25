@@ -1,0 +1,51 @@
+.footer{
+    margin-top: 110px;
+    border-top: 1px solid #9F9F9F;
+    padding: 48px 100px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container h3{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.footer-container-element{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer-grey{
+    color: #9F9F9F;
+}
+
+.footer-container-element input, .footer-container-element button{
+    border: none;
+    border-bottom: 1px solid;
+    padding: 8px;
+    width: 170px;
+    cursor: pointer;
+    background-color: #FFFF;
+    transition: all 500ms ease;
+}
+
+.footer-container-element p{
+    cursor: pointer;
+}
+
+.footer-container-element button:hover{
+    background-color: #9F9F9F;
+    border-radius: 10px;
+    color: #FFFF;
+}
+
+.footer-rights{
+    margin-top: 20px;
+    padding-top: 16px;
+    width: 100%;
+}
