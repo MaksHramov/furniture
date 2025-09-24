@@ -6,6 +6,8 @@ import CartPage from '../../pages/CartPage/CartPage'
 import ProductPage from '../../pages/ProductPage/ProductPage'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from '../../pages/HomePage/HomePage'
+import LikedPage from '../../pages/LikedPage/LikedPage'
+import CheckOutPage from '../../pages/CheckOutPage/CheckOutPage'
 
 function App() {
 
@@ -18,10 +20,11 @@ function App() {
             <Route path='/' element={<HomePage/>}/>
             <Route path='/products' element={<ProductPage/>}/>
             <Route path='/cart' element={<CartPage/>}/>
+            <Route path='/liked' element={<LikedPage/>}/>
+            <Route path='/checkout' element={<CheckOutPage/>}/>
           </Routes>
-
-      <Footer/>
     </div>
+    <Footer/>
     </>
   )
 }

@@ -1,8 +1,11 @@
 import styles from './Footer.module.css'
 import { Link } from 'react-router-dom';
+import achivments from '../../images/CartPage/achivments.png'
 
 function Footer() {
     return ( 
+        <>
+        <img className={styles["achivments"]} src={achivments} alt="img" />
         <div className={styles['footer']}>
             <div className={styles['footer-container']}>
                 <section className={styles['footer-container-element']}>
@@ -34,6 +37,7 @@ function Footer() {
                 <p>2025 furino. All rights reverved</p>
             </div>
         </div>
+        </>
      );
 }
 

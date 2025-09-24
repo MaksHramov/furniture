@@ -3,10 +3,14 @@
     align-items: center;
     justify-content: space-between;
     height: 100px;
+    padding: 0 20px;
+    position: relative;
 }
 
 .header-logo{
     cursor: pointer;
+    max-width: 120px;
+    height: auto;
 }
 
 ul{
@@ -15,6 +19,8 @@ ul{
     list-style-type: none;
     gap: 50px;
     font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 li{
@@ -32,4 +38,131 @@ li:hover{
 
 .header-section-user li:hover{
     transform: scale(1.2);
+}
+
+/* Бургер меню */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    z-index: 1001;
+}
+
+.burger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+.burger-menu-open span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.burger-menu-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu-open span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Overlay для мобильных */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .header-section-links,
+    .header-section-user {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background: white;
+        z-index: 1000;
+        transition: right 0.3s ease;
+        padding-top: 100px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-section-links.menu-open {
+        right: 0;
+    }
+
+    .header-section-user.menu-open {
+        right: 0;
+        top: auto;
+        bottom: 0;
+        height: auto;
+        padding: 20px;
+        background: #f8f8f8;
+    }
+
+    .header-section-links ul {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .header-section-user ul {
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .overlay {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 80px;
+        padding: 0 15px;
+    }
+
+    .header-logo {
+        max-width: 100px;
+    }
+
+    .header-section-links,
+    .header-section-user {
+        width: 85%;
+    }
+
+    ul {
+        gap: 25px;
+        font-size: 16px;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+    ul {
+        gap: 30px;
+        font-size: 16px;
+    }
+
+    .header {
+        padding: 0 30px;
+    }
 }

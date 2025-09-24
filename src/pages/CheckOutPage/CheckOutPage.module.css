@@ -1,0 +1,179 @@
+.banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    object-fit: cover;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+  }
+
+  .left {
+    flex: 1.2;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formRow {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .formGroup label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .formGroup input:focus,
+  .formGroup select:focus,
+  .formGroup textarea:focus {
+    border-color: #000;
+  }
+  
+  .formGroup textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .right {
+    flex: 0.8;
+    background: #f9f9f9;
+    padding: 25px 30px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .summaryHeader,
+  .summaryRow,
+  .summaryRowTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+
+  .summaryHeader h2 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .summaryRow p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .summaryRow strong,
+  .summaryRowTotal strong {
+    font-size: 15px;
+  }
+  
+  .summaryRowTotal {
+    border-top: 2px solid #ddd;
+    padding-top: 12px;
+    margin-top: 12px;
+  }
+  
+  .totalPrice {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .payment {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .payment label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .paymentInfo {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+    margin-left: 25px;
+  }
+
+  .privacy {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .privacy a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  /* Кнопка */
+  .placeOrder {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .placeOrder:hover {
+    background: rgb(42, 136, 42);
+  }
+  
+  /* Адаптив */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  

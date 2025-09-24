@@ -1,5 +1,11 @@
 .product-list{
     display: flex;
-    justify-content: space-between;
+    gap: 3%;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loading{
+    font-size: 52px;
+    margin-top: 32px;
 }

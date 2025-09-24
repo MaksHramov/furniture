@@ -1,0 +1,15 @@
+.search{
+    width: 100%;
+    border-radius: 16px;
+    height: 50px;
+    padding: 0px 16px;
+    margin-top: 32px;
+    border: none;
+    background-color: rgb(222, 221, 221);
+}
+
+.search:focus{
+    outline: none;
+    border-color: rgb(223, 215, 215); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+  }

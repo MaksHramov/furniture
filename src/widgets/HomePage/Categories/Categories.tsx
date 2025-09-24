@@ -18,7 +18,7 @@ function Categories() {
                 <Link to="/products"><img src={living} alt="" /></Link>
                     <h3>Living</h3>
                 </div>
-                <div className={styles['categories-elememt']}>
+                <div className={styles['categories-element']}>
                 <Link to="/products"><img src={bedroom} alt="" /></Link>
                     <h3>Bedroom</h3>
                 </div>
