@@ -1,33 +1,31 @@
 import Card from "../Card/Card";
 import styles from './ProductList.module.css'
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { addToCart } from "../../app/providers/cartSlice";
 import { addToLiked } from "../../app/providers/likedSlice";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { API_URL } from "../../shared/api/api";
-import { loadItems } from "../../app/providers/productsSlice";
+import { useState } from "react";
 import Search from "../Search/Search";
+import { useGetProductsQuery } from "../../app/providers/productsApi";
 
 function ProductList() {
   const dispatch = useDispatch();
-  const products = useSelector((state: any) => state.products?.items ?? []);
-  const [search, setSearch] = useState(""); // состояние поиска
+  const [search, setSearch] = useState("");
+  const { data, isLoading, isError } = useGetProductsQuery(20);
 
-  useEffect(() => {
-    if (products.length === 0) {
-      axios.get(`${API_URL}/v1/products?limit=20`)
-        .then(res => {
-          dispatch(loadItems(res.data.data));  
-        })
-        .catch(err => console.error("Ошибка API:", err));
-    }
-  }, [dispatch, products.length]);
+  const products = data?.data ?? [];
 
   const filteredProducts = products.filter((el: any) =>
     el.name.toLowerCase().includes(search.toLowerCase()) ||
     el.description.toLowerCase().includes(search.toLowerCase())
   );
+
+  if(isLoading){
+    return <p className={styles['loading']}>Загрузка .... </p>
+  }
+
+  if(isError){
+    return <p className={styles['error']}>Ошибка при загрузке продуктов </p>
+  }
 
   return ( 
     <>
